@@ -1,6 +1,6 @@
 ---
 Title: 'map'
-Description: 'Map is a built-in data structure used to store data of the same or different data type in key-value pairs.'
+Description: 'Map is a built-in data structure used to store data of the same or different data type in unordered key-value pairs.'
 Subjects:
   - 'Computer Science'
 Tags:
@@ -27,7 +27,7 @@ An empty map can be created using the `create` function and assigning it to a va
 
 ### Initializing a map with existing key-value pairs.
 
-A map can also be initialized with key-values pairs using a map literal.
+A map can also be initialized with key-values pairs already using a map literal.
 
 ```pseudo
 [variable_name] := map[key_data_type]value_data_type){key-1: value-1...}
@@ -61,7 +61,7 @@ Add new key-value pairs into the map by setting the new key value to a new value
 
 ### Create empty map
 
-The following code will demonnstrate how to create an empty map and print it.
+The following code will demonstrate how to create an empty map and print it.
 
 ```go
 package main
@@ -84,7 +84,7 @@ map[]
 ```
 
 ### Initialize a map with key-value pairs
-The following code will demonstrate how to initialize a map with kep-value pairs and print. it
+The following code will demonstrate how to initialize a map with kep-value pairs already in it and print it.
 
 ```go
 package main
@@ -109,7 +109,7 @@ map[Ana:95.6 John:85.2]
 
 ### Access a key-value pair in the map
 
-The following code will print out the corresponding value for the key "John"
+The following code will print out the corresponding value for the key "John".
 
 ```go
 package main
@@ -134,7 +134,7 @@ Output:
 
 ### Access and store a key-value pair in a variable
 
-The following code will access the value in the map that has the corresponding key of "John". It will store the result in a variable called johnScore and print it.
+The following code will access the value in the map that has the corresponding key of "Ana". It will store the result in a variable called anaScore and print it.
 
 ```go
 package main
@@ -159,7 +159,7 @@ func main() {
 
 ### Accessing a key that does not exist
 
-The following code will demonstrate what will returned as the value for a key that does not exist for a map with strings as keys and floats as values.
+The following code will demonstrate what will be returned as the value for a key that does not exist for a map with strings as keys and floats as values.
 
 ```go
 package main
@@ -174,7 +174,7 @@ func main() {
    // Store the value that has a key of "John" in johnScore
    johnScore := gradebook["David"]
    
-   // Since "David" does not exist in the float 0 will be printed
+   // Since "David" does not exist in the map, 0 will be printed
    fmt.Println(johnScore)
 }
 
@@ -219,7 +219,7 @@ map[Ana:95.6 Emma:90 George:76.4 John:85.2]
 
 ### Codebyte Example
 
-The following code will summarize all the initialization and operations for maps that has been shown in this document.
+The following code will summarize all the initialization and operations for map in Go that has been shown in this document.
 
 ```go
 package main
@@ -240,14 +240,14 @@ func main() {
   // Print map m
   fmt.Println("m with 2 added key-value pairs: ",m)
   
-  // Create map with values that has key data type as string and value data type as double
+  // Create map called gradebook with values that has key data type as string and value data type as double
   gradebook:= map[string]float32{"John" : 85.2, "Ana" : 95.6}
 
   // Output map gradebook
-  fmt.Println("map gradebook: ",gradebook)
+  fmt.Println("map gradebook: ", gradebook)
   
-  // Access non-existing key gets  zero value
-  fmt.Println("grade of Bob who is not in map gradebook: ",gradebook["Bob"])
+  // Access non-existing key gets zero value
+  fmt.Println("grade of Bob who is not in map gradebook: ", gradebook["Bob"])
   
   // Store the value of the key "Ana" into variable
   anaGrade := gradebook["Ana"]
@@ -261,7 +261,7 @@ func main() {
 
 
  // Output map gradebook with new values
- fmt.Println("map gradebook with 2 more values: ",gradebook)
+ fmt.Println("map gradebook with 2 more values: ", gradebook)
 
 }
 ```

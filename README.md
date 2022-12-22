@@ -136,7 +136,7 @@ This will output:
 85.2
 ```
 
-### Access and store a key-value pair in a variable
+### Store a value corresponding to a key of the map into a variable
 
 The following code will access the value in a map corresponding to the key of "Ana". It will store the result in a variable called `anaScore` and print it.
 
